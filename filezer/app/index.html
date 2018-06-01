@@ -1,0 +1,38 @@
+<!DOCTYPE html > 
+<html lang =" en"> 
+<head> 
+<meta name ="viewport" content ="width = device-width, initial-scale = 1, shrink-to-fit = no" charset="UTF-8"> 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+<link rel =" stylesheet" href ="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"> 
+<script src="./app.js"></script>
+<title>Filezer - Secure file storage using the blockchain</title>
+</head> 
+<body> 
+<div class ="container"></div> 
+<div class ="row"> <div class ="col-md-6 offset-md-3 text-xs-center"> <br> 
+<h3> Upload a file </h3> <br> 
+<div> <div class ="form-group"> 
+<label class ="custom-file text-xs-left">
+  <input type ="file" id ="file" class ="custom-file"/> 
+  <span class ="custom-file-control"> </span> 
+  </label> <br> <br>  
+  </div> 
+  <div class ="form-group" > <label for ="description"> Enter a description for the file </label> 
+  <input type ="text" class ="form-control" id ="description" > </div> 
+  
+  <div class ="form-group" > <label for ="fileHash"> Enter the file hash to prove ownership </label> 
+  <input type ="text" class ="form-control" id ="fileHash" > </div> 
+    
+  <button onclick ="App.submitFile()" class ="btn btn-primary"> Submit File </button> 
+  <button onclick ="App.retrieveFile()" class =" btn btn-primary"> Retrieve File </button> 
+  <br> <br> 
+  <div class ="alert alert-info" role ="alert" id ="message" > This service allows you to upload files and retrieve them. </div > </div> </div> </div> <div class =" row">
+  <div class =" col-md-6 offset-md-3 text-xs-center"> 
+  <br> <h3> Live Transactions </h3> 
+  <br> 
+  <ol id ="events_list" > No Transaction Found </ol > </div> </div> </div>
+   
+  <!-- <script type ="text/javascript" src ="/js/socket.io.min.js" > </script> 
+  <script type ="text/javascript" src ="/js/main.js" > </script>  -->
+  </body> 
+  </html>
